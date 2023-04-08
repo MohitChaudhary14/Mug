@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffe Mug</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --darkGreen: hsl(158, 36%, 37%);
+            --cream: hsl(30, 38%, 92%);
+            --gray: hsl(228, 12%, 48%);
+            --white: hsl(0, 0%, 100%);
+            --head: 2rem;
+            --text: 1rem;
+        }
+
+        .img {
+            max-width: 100%;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--cream);
+        }
+
+        .cardbox {
+            margin: 1em 2em;
+            max-width: 400px;
+            border-radius: 1.5em;
+            background-color: white;
+
+        }
+
+        .desktop img {
+            display: none;
+        }
+
+        .cardtext {
+            text-align: left;
+            margin: 1.5em 2em;
+
+        }
+
+        .product {
+            font-size: var(--text);
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: var(--gray);
+        }
+
+        .tittle {
+            font-weight: 700;
+            line-height: 1;
+            margin: 0.6em 0 0.7em 0;
+            font-size: var(--head);
+        }
+
+        .description {
+            width: 96%;
+            font-weight: 500;
+            margin-bottom: 1.5em;
+            font-size: var(--text);
+            color: var(--gray);
+        }
+
+        .green text {
+            margin-right: 0.3em;
+            color: var(--darkGreen);
+        }
+
+        .strick {
+            text-decoration: line-through;
+            align-self: center;
+        }
+
+        .btn {
+            display: block;
+            margin: 2em 0 1em 0;
+            width: 100%;
+            padding: 1em 0;
+            border: 0;
+            border-radius: 0.7em;
+            outline: none;
+            cursor: pointer;
+            color: var(--white);
+            background-color: var(--darkGreen);
+        }
+
+
+
+        .btn:hover {
+            background-color: lightgreen;
+        }
+
+        .btn_img {
+            margin-right: 1em;
+            max-width: 100%;
+        }
+
+        .btn-text {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cardbox">
+            <div class="img">
+                <img src="mug.jpg" alt="" class="desktop img">
+            </div>
+        </div>
+        <div class="cardtext">
+            <p class="product">Coffe Mug</p>
+            <h2 class="tittle">White Coffee Mug</h2>
+            <p class="description">
+                Coffee Mugs are designed to express emotions. These are acclaimed for their amazing designs & superior
+                quality.
+            </p>
+            <p class="price">
+                <span class="green text">₹149</span>
+                <span class="strick">₹230</span>
+            </p>
+            <button class="btn">
+                <img src="icon-cart.png" alt="" class="btn_img">
+                <span class="btn-text">Add to cart</span>
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>
